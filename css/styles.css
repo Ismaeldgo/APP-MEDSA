@@ -1,0 +1,192 @@
+/************    ****************************/
+
+
+@font-face {
+	font-family: 'casa';
+	src:url('../fonts/casa.eot?7fn4z3');
+	src:url('../fonts/casa.eot?#iefix7fn4z3') format('embedded-opentype'),
+		url('../fonts/casa.ttf?7fn4z3') format('truetype'),
+		url('../fonts/casa.woff?7fn4z3') format('woff'),
+		url('../fonts/casa.svg?7fn4z3#casa') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'casa';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home3:before {
+	content: "\e600";
+}
+
+
+
+
+
+/******************    **************************/
+
+
+
+
+
+body
+{
+	/*background: url(https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg)no-repeat center center fixed;*/
+	background: url(../img/people.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   /* position: relative;*/
+    font-size: .9em;
+}
+
+
+.header-initial_home figure
+{
+	/*background: red;*/
+}
+
+
+.header-initial_home figure img
+{
+	width: 198px;
+	margin: 0 auto 0 auto;
+	display: block;
+
+}
+
+.header-initial_home nav
+{
+	background: #BA0000; opacity: 0.7;
+	text-align: center;
+	position: relative;
+}
+
+
+.header-initial_home nav ul
+{
+	/*background: black;*/
+	margin-left: -35px;
+}
+
+.header-initial_home nav ul li
+{
+	display: inline-block;
+	/*background: blue;*/
+	padding: 1em .4em 1em .4em;
+	margin-right: .5em;
+	position: relative;
+}
+
+.header-initial_home nav ul li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 1em .8em 1em .8em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.header-initial_home nav ul li a:hover
+{
+	background: red; opacity: 15;
+	
+}
+
+/********* ESTILOS MENÚ DESPLEGABLE ***********/
+
+.header-initial_home nav li li a
+{
+	padding: 1em 2.8em 1em 2.7em;
+	font-family: 'Open Sans', sans-serif;
+	/*background: blue;*/
+}
+
+
+.header-initial_home nav li li 
+{
+	display: block;
+	width: 10px;
+	margin: 0;
+
+
+}
+
+.header-initial_home nav li ul
+{
+	display: none;
+	width: 150px;
+	/*margin: 0;*/
+	padding: 0;
+	background: #BA0000; opacity: 0.9;
+	border: 1px solid #ccc;
+	position: absolute;
+	left: 0%;
+	top: 100%;
+}
+
+.header-initial_home nav li:hover ul
+{
+	display: block;
+	
+}
+
+.header-initial_home nav li li a:hover
+{
+	background: red;
+}
+
+
+/************** FIN ESTILOIS MENÚ DESPLEGABLE **************/
+
+
+h1
+{
+	background: white; opacity: 0.5;
+	font-size: 2em;
+	width: 400px;
+	border-radius: 2px;
+	text-align: center;
+	padding: .2em 0 .2em 0;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+footer
+{
+	background: #BA0000; opacity: 0.5;
+	text-align: center;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: .8em;
+	width: 100%
+}
+
+
+
+
+.icon-home3
+{
+	color: white;
+	width: 30px;
+}
+
+.header-initial_home nav ul li span .icon-home3
+{
+	background: blue;
+}
+
+
