@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="es">
+<html class="no-js" lang="es-MX">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>MEDSA</title>
-        <meta name="description" content="">
+        <meta name="description" content="APP MEDSA CREDITO Y COBRANZA">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="shorcut icon" href="favicon.ico">
@@ -16,17 +16,24 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
        <link rel="stylesheet" href="css/styles.css">
-     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> 
+         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
 
+       <script>
+            function openWindow(){
+                $(".windows-modal").slideDown("slow");
+            }
+            function closeWindow(){
+                $(".windows-modal").slideUp("fast");
+            }
+       </script>
 
-
-
-
-    </head>
+   </head>
     <body>
+       
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -35,16 +42,16 @@
 
         <header class="header-initial_home">
             <figure>
-                <img src="img/logo.png" alt="">
+                <img src="img/logo.png" alt="logomedsa"> 
             </figure>
 
 
             <nav>
                 <ul>
                     <li> <span class="icon-home3"></span><a  href="index.html">INICIO</a></li>
-                    <li><a href="#">EJEMPLO</a>
+                    <li><a href="#">CLIENTES</a>
                         <ul>
-                            <li><a href="#">EJEMPLO</a></li>
+                            <li class="-1"><a href="javascript:openWindow()">Antiguedad</a></li>
                             <li><a href="#">EJEMPLO</a></li>
                             <li><a href="#">EJEMPLO</a></li>
                             <li><a href="#">EJEMPLO</a></li>
@@ -81,23 +88,46 @@
 
 
         
-        <h1>Credito y Cobranza</h1>
+        <h1 class="icon-profile">Credito y Cobranza</h1>
 
+
+        <div class="windows-modal">
+            <h1>Formularios</h1>
+
+            <div class="close">
+                <p><a href="javascript:closeWindow()">Cerrar</a></p>
+            </div>
+
+            <div class="load">
+                <h1>forms</h1>
+
+                <form name='frmArchivo' id="frmArchivo" method="post">          
+                    <label>Archivo:</label>
+                    <input type="file" name="archivo" id="archivo" accept=".csv" />
+                        <br>
+                    <input type="hidden" name="MAX_FILE_SIZE" value="200000" />  
+                        <br>                      
+                    <input type = "submit" name="enviar" value="Importar"/> 
+                        <br>        
+                </form>    
+
+            </div>
+        </div>
 
         
         <footer>
-            <p>Powered by System Departament</p>
-            <p>- MEDSA -</p>
+            <p class="icon-windows8">Powered by System Departament</p>
+            <p class="icon-html5">- MEDSA -</p>
         </footer>
 
 
-
-            
-  
+ 
+                  
         
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
