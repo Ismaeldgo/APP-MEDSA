@@ -5,7 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>MEDSA</title>
         <meta name="description" content="APP MEDSA CREDITO Y COBRANZA">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=1 maximum-scale=1">
 
         <link rel="shorcut icon" href="favicon.ico">
         <!-- Place favicon.ico in the root directory -->
@@ -20,13 +20,41 @@
          <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
+    <!-- CODIGO DE VENTANAS MODALES -->
 
-       <script>
+       <script>                                              
             function openWindow(){
                 $(".windows-modal").slideDown("slow");
             }
             function closeWindow(){
                 $(".windows-modal").slideUp("fast");
+            }
+       </script>
+
+       <script>
+             function openWindow1(){
+                $(".windows-modal-1").slideDown("slow");
+            }
+            function closeWindow1(){
+                $(".windows-modal-1").slideUp("fast");
+            }
+       </script>
+
+        <script>
+             function openWindow2(){
+                $(".windows-modal-2").slideDown("slow");
+            }
+            function closeWindow2(){
+                $(".windows-modal-2").slideUp("fast");
+            }
+       </script>
+
+       <script>
+             function openWindow3(){
+                $(".windows-modal-3").slideDown("slow");
+            }
+            function closeWindow3(){
+                $(".windows-modal-3").slideUp("fast");
             }
        </script>
 
@@ -51,16 +79,16 @@
                     <li> <span class="icon-home3"></span><a  href="index.html">INICIO</a></li>
                     <li><a href="#">CLIENTES</a>
                         <ul>
-                            <li class="-1"><a href="javascript:openWindow()">Antiguedad</a></li>
-                            <li><a href="#">EJEMPLO</a></li>
+                            <li><a href="javascript:openWindow()">ANTIGUEDAD</a></li>
+                            <li><a href="javascript:openWindow1()">INFORMACIÓN</a></li>
                             <li><a href="#">EJEMPLO</a></li>
                             <li><a href="#">EJEMPLO</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">EJEMPLO</a>
+                    <li><a href="#">ENVÍO</a>
                         <ul>
-                            <li><a href="#">EJEMPLO</a></li>
-                            <li><a href="#">EJEMPLO</a></li>
+                            <li><a href="javascript:openWindow2()">CUENTA</a></li>
+                            <li><a href="javascript:openWindow3()">AVISOS</a></li>
                             <li><a href="#">EJEMPLO</a></li>
                             <li><a href="#">EJEMPLO</a></li>
                         </ul>
@@ -87,34 +115,159 @@
         </header>
 
 
-        
-        <h1 class="icon-profile">Credito y Cobranza</h1>
+            <h1 class="icon-profile">Credito y Cobranza</h1>
 
+            <div class="windows-modal">
+               
+                <h1>Antiguedad de Clientes</h1>
 
-        <div class="windows-modal">
-            <h1>Formularios</h1>
+                <div class="close">
+                    <p><a href="javascript:closeWindow()">Cerrar</a></p>
+                </div>
 
-            <div class="close">
-                <p><a href="javascript:closeWindow()">Cerrar</a></p>
+                <div class="load">
+                    
+
+                    <form name='frmArchivo' id="frmArchivo" method="post">          
+                        <label>Archivo:</label>
+                        <input type="file" name="archivo" id="archivo" accept=".csv" />
+                            <br>
+                        <input type="hidden" name="MAX_FILE_SIZE" value="200000" />  
+                            <br>                      
+                        <input type = "submit" name="enviar" value="Importar"/> 
+                            <br>        
+                    </form>    
+
+                </div>
             </div>
 
-            <div class="load">
-                <h1>forms</h1>
 
-                <form name='frmArchivo' id="frmArchivo" method="post">          
-                    <label>Archivo:</label>
-                    <input type="file" name="archivo" id="archivo" accept=".csv" />
-                        <br>
-                    <input type="hidden" name="MAX_FILE_SIZE" value="200000" />  
-                        <br>                      
-                    <input type = "submit" name="enviar" value="Importar"/> 
-                        <br>        
-                </form>    
 
+
+
+
+
+
+
+
+            <div class="windows-modal-1">
+               
+                <h1>Información de Clientes</h1>
+
+                <div class="close-1">
+                    <p><a href="javascript:closeWindow1()">Cerrar</a></p>
+                </div>
+
+                <div class="load-1">
+                    
+
+                    <form name='frmArchivo' id="frmArchivo" method="post">          
+                        <label>Archivo:</label>
+                        <input type="file" name="archivo" id="archivo" accept=".csv" />
+                            <br>
+                        <input type="hidden" name="MAX_FILE_SIZE" value="200000" />  
+                            <br>                      
+                        <input type = "submit" name="enviar" value="Importar"/> 
+                            <br>        
+                    </form>    
+
+                </div>
             </div>
-        </div>
+
+
+            <div class="windows-modal-2">
+               
+                <h1>Estado de Cuenta</h1>
+
+                <div class="close-2">
+                    <p><a href="javascript:closeWindow2()">Cerrar</a></p>
+                </div>
+
+                <div class="load-2">
+                    
+
+                   <!-- <form name='frmArchivo' id="frmArchivo" method="post">          
+                        <label>Archivo:</label>
+                        <input type="file" name="archivo" id="archivo" accept=".csv" />
+                            <br>
+                        <input type="hidden" name="MAX_FILE_SIZE" value="200000" />  
+                            <br>                      
+                        <input type = "submit" name="enviar" value="Importar"/> 
+                            <br>        
+                    </form>    -->
+
+
+
+                    <div class="text">  
+                          <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script> <script type="text/javascript">
+                        //<![CDATA[
+                                bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+                          //]]>
+                          </script>
+                          <h3>
+                            Mensaje Personalisado
+                          </h3>
+                          <textarea name="area1" cols="40">
+                        </textarea><br />
+                    </div> 
+
+                </div>
+            </div>
+
 
         
+            <div class="windows-modal-3">
+               
+                <h1>Avisos de Cuenta</h1>
+
+                <div class="close-3">
+                    <p><a href="javascript:closeWindow3()">Cerrar</a></p>
+                </div>
+
+
+
+
+               <div class="load-3">
+                    
+
+
+                    
+                     
+                      
+
+                            
+                <div class="text">  
+                      <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script> <script type="text/javascript">
+                    //<![CDATA[
+                            bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+                      //]]>
+                      </script>
+                      <h3>
+                        Mensaje Personalisado
+                      </h3>
+                      <textarea name="area1" cols="40">
+                    </textarea><br />
+                </div> 
+
+
+
+                    <!--<form name='frmArchivo' id="frmArchivo" method="post">          
+                        <label>Archivo:</label>
+                        <input type="file" name="archivo" id="archivo" accept=".csv" />
+                            <br>
+                        <input type="hidden" name="MAX_FILE_SIZE" value="200000" />  
+                            <br>                      
+                        <input type = "submit" name="enviar" value="Importar"/> 
+                            <br>        
+                    </form>  -->  
+
+                </div> 
+            </div>
+
+
+
+
+
         <footer>
             <p class="icon-windows8">Powered by System Departament</p>
             <p class="icon-html5">- MEDSA -</p>
